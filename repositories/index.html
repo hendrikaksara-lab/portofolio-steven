@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositories - Steven</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #2c3e50; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #34495e; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; }
+        .repo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .repo-card { border: 1px solid #ddd; border-radius: 8px; padding: 20px; background: #f9f9f9; }
+        .repo-card h3 { margin-top: 0; color: #2c3e50; }
+        .repo-card p { color: #666; }
+        .repo-links { margin-top: 15px; }
+        .repo-links a { display: inline-block; margin-right: 10px; padding: 8px 12px; background-color: #3498db; color: white; text-decoration: none; border-radius: 4px; }
+        .repo-links a:hover { background-color: #2980b9; }
+        .back-link { display: inline-block; margin-bottom: 20px; padding: 10px 15px; background-color: #95a5a6; color: white; text-decoration: none; border-radius: 4px; }
+        .back-link:hover { background-color: #7f8c8d; }
+        footer { background-color: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Repositories</h1>
+        <p>Kumpulan proyek dan kode sumber saya</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">← Kembali ke Portfolio</a>
+        <a href="#repos">Repositories</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">← Kembali ke Portfolio</a>
+
+        <section id="repos">
+            <h2>Proyek Utama</h2>
+            <div class="repo-grid">
+                <div class="repo-card">
+                    <h3>To-do App (React)</h3>
+                    <p>Aplikasi manajemen tugas sederhana menggunakan React dan localStorage untuk penyimpanan data.</p>
+                    <div class="repo-links">
+                        <a href="https://github.com/steven-dev/todo-app-react" target="_blank">View on GitHub</a>
+                        <a href="../todo-app/dist/index.html">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="repo-card">
+                    <h3>Portfolio Website</h3>
+                    <p>Website portfolio pribadi dibuat dengan React dan Vite, menampilkan proyek dan informasi tentang saya.</p>
+                    <div class="repo-links">
+                        <a href="https://github.com/steven-dev/portfolio-react" target="_blank">View on GitHub</a>
+                        <a href="../index.html">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="repo-card">
+                    <h3>School Website</h3>
+                    <p>Website statis untuk Sekolah Tri Ratna dengan informasi profil, dan kontak.</p>
+                    <div class="repo-links">
+                        <a href="https://github.com/steven-dev/school-website" target="_blank">View on GitHub</a>
+                        <a href="../school-website/index.html">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="repo-card">
+                    <h3>Personal Blog</h3>
+                    <p>Blog pribadi untuk berbagi artikel tentang pemrograman dan teknologi dengan fitur pencarian dan komentar.</p>
+                    <div class="repo-links">
+                        <a href="https://github.com/steven-dev/personal-blog" target="_blank">View on GitHub</a>
+                        <a href="../personal-blog/index.html">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Tentang Repositories</h2>
+            <p>Di halaman ini, Anda dapat menemukan tautan ke repository GitHub saya dan demo langsung dari berbagai proyek yang telah saya buat. Setiap proyek mencakup teknologi yang berbeda dan menunjukkan kemampuan pengembangan saya.</p>
+            <p>Jika Anda tertarik dengan kode sumber atau ingin berkontribusi, silakan kunjungi repository di GitHub.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Steven. All rights reserved.</p>
+    </footer>
+</body>
+</html>

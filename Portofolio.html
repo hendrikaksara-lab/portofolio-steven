@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Steven</title>
+  <meta name="description" content="Portfolio pribadi Steven — tentang, skill, proyek, dan kontak." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!-- placeholder favicon -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#06b6d4; /* cyan */
+      --glass: rgba(255,255,255,0.04);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,var(--bg), #071025);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+    .container{max-width:1000px;margin:40px auto;padding:24px}
+    header{
+      display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#8b5cf6);display:flex;align-items:center;justify-content:center;font-weight:700;color:#021627}
+    h1{font-size:20px;margin:0}
+    nav a{color:var(--muted);text-decoration:none;margin-left:12px}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:center;margin-bottom:28px}
+    .card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .intro h2{margin:0 0 8px 0;font-size:28px}
+    .intro p{margin:0;color:var(--muted)}
+    .avatar{width:100%;height:320px;border-radius:10px;background:linear-gradient(180deg,#07202a,#0d2131);display:flex;align-items:center;justify-content:center;font-size:40px;color:var(--muted)}
+    .badges{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+    .badge{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-weight:600}
+    section{margin-bottom:20px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .skill{padding:12px;border-radius:8px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .project{padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));}
+    footer{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.02)}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#8b5cf6);color:#021627;font-weight:700;text-decoration:none}
+    form input, form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;margin-top:8px}
+    form label{display:block;margin-top:10px;color:var(--muted);font-size:13px}
+    .note{color:var(--muted);font-size:13px;margin-top:8px}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .projects{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">S</div>
+        <div>
+          <h1>Steven</h1>
+          <div style="color:var(--muted);font-size:13px">Pelajar • Frontend enthusiast • Pembelajar cepat</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="card intro">
+          <h2>Halo — saya Steven 👋</h2>
+          <p>Saya pelajar yang suka membuat website dan belajar pemrograman. Saya tertarik pada desain antarmuka, React, dan membuat proyek kecil yang berguna.</p>
+          <div class="badges">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">React</span>
+            <span class="badge">Responsive Design</span>
+          </div>
+
+          <div style="margin-top:16px;display:flex;gap:10px;align-items:center">
+            <a class="btn" href="#projects">Lihat Proyek</a>
+            <a style="text-decoration:none;color:var(--muted);padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)" href="#contact">Hubungi</a>
+          </div>
+
+          <div style="margin-top:14px;color:var(--muted);font-size:13px">
+            Lokasi: Indonesia • Bahasa: Indonesia, Inggris (dasar)
+          </div>
+        </div>
+
+        <aside class="card">
+          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8Q" + "..." + "" alt="Foto Steven" class="avatar" style="object-fit:cover;" />
+          <div style="margin-top:12px;color:var(--muted);font-size:14px">Ringkasan singkat:
+            <div class="note">Saya suka membuat UI sederhana, mempelajari React dan Vite, serta mengerjakan proyek sekolah dan portofolio ini.</div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about">
+        <div class="card">
+          <h3>Tentang Saya</h3>
+          <p style="color:var(--muted)">Nama: Steven<br>Umur: 16<br>Pendidikan: Sekolah Tri Ratna<br>Saya tertarik pada pemrograman frontend dan desain. Saya menikmati membangun halaman web responsif dan belajar framework modern seperti React.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="card">
+          <h3>Skills</h3>
+          <div class="grid-3" style="margin-top:12px">
+            <div class="skill"><strong>HTML & CSS</strong><div class="note">Membuat struktur HTML yang rapi, responsive layout, Flexbox & Grid</div></div>
+            <div class="skill"><strong>JavaScript</strong><div class="note">DOM, fetch, basic ES6</div></div>
+            <div class="skill"><strong>React</strong><div class="note">Komponen, props, state, hooks dasar</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h3 style="margin-bottom:8px">Proyek Pilihan</h3>
+        <div class="projects">
+          <article class="project card">
+            <h4>1) Website Sekolah</h4>
+            <p class="note">Website informatif untuk sekolah dengan halaman profil, galeri, dan kontak.</p>
+            <p class="note">Teknologi: HTML, CSS, JavaScript</p>
+            <a href="#" class="btn" style="margin-top:10px;display:inline-block">Demo</a>
+          </article>
+
+          <article class="project card">
+            <h4>2) To-do App (React)</h4>
+            <p class="note">Aplikasi manajemen tugas sederhana menggunakan React dan localStorage.</p>
+            <p class="note">Teknologi: React, Vite</p>
+            <a href="#" class="btn" style="margin-top:10px;display:inline-block">Repo</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="card">
+          <h3>Kontak</h3>
+          <p class="note">Isi form ini atau kirim email langsung ke <strong>steven@example.com</strong> (ganti dengan email kamu).</p>
+          <form id="contactForm">
+            <label for="name">Nama</label>
+            <input id="name" name="name" placeholder="Nama kamu" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="email@contoh.com" required />
+
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tulis pesan..." required></textarea>
+
+            <button type="submit" class="btn" style="margin-top:12px">Kirim</button>
+            <div id="formMsg" class="note"></div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Steven — dibuat dengan ❤️</div>
+      <div style="color:var(--muted)">Built with HTML • CSS • JS</div>
+    </footer>
+  </div>
+
+  <script>
+    // Small interactivity: handle contact form locally and show a message
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const form = document.getElementById('contactForm');
+    const formMsg = document.getElementById('formMsg');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if(!name || !email || !message){
+        formMsg.textContent = 'Mohon isi semua kolom.';
+        return;
+      }
+      // In real use: send to server or email. Here we just show a success message.
+      formMsg.textContent = `Terima kasih, ${name}! Pesanmu telah tercatat (demo).`;
+      form.reset();
+    });
+  </script>
+</body>
+</html>
